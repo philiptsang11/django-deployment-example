@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to relative url templates</h1>
+    <a href="{% url 'basic_app:other' %}">The other page</a>
+    <!-- What it does is that it asks Django to look at urls.py, and insidem, search for the 'basic_app'. Then the :other, is to find the corresponding view -->
+    <a href="{% url 'admin:index' %}"></a>
+</body>
+
+</html>
